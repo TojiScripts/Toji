@@ -1,121 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Toji Script Hub</title>
+<title>Toji Script</title>
 
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
 body{
-background:#050505;
-color:white;
-font-family:Arial,sans-serif;
-margin:0;
-padding:20px;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    background:
+    radial-gradient(circle at top,#3a0000,#0a0a0a 70%);
+}
+
+.container{
+    width:100%;
+    max-width:850px;
 }
 
 .card{
-max-width:800px;
-margin:auto;
-background:#111;
-padding:30px;
-border-radius:20px;
+    background:rgba(0,0,0,.85);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:32px;
+    padding:35px;
+    backdrop-filter:blur(25px);
+    box-shadow:0 0 50px rgba(255,0,0,.15);
+}
+
+.header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin-bottom:30px;
 }
 
 .logo{
-width:100px;
-height:100px;
-border-radius:15px;
-display:block;
-margin:auto;
+    width:80px;
+    height:80px;
+    border-radius:18px;
+    object-fit:cover;
 }
 
-h1{
-text-align:center;
-letter-spacing:5px;
+.title h1{
+    color:#fff;
+    letter-spacing:8px;
+    font-size:42px;
+    font-weight:300;
 }
 
-.subtitle{
-text-align:center;
-color:gray;
+.title p{
+    color:#8d8d8d;
+    letter-spacing:5px;
+    margin-top:5px;
 }
 
 .script-box{
-background:black;
-padding:15px;
-border-radius:10px;
-margin-top:20px;
+    background:#050505;
+    border:1px solid rgba(255,255,255,.05);
+    border-radius:20px;
+    padding:25px;
+    overflow:auto;
+}
+
+.script{
+    color:#6cff6c;
+    font-family:monospace;
+    font-size:17px;
 }
 
 .copy-btn{
-width:100%;
-padding:15px;
-margin-top:15px;
-background:red;
-color:white;
-border:none;
-border-radius:10px;
-font-size:18px;
-cursor:pointer;
+    width:100%;
+    margin-top:20px;
+    padding:18px;
+    border:none;
+    border-radius:18px;
+    background:linear-gradient(90deg,#8b0000,#c40000);
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
 }
 
-.feature{
-background:#181818;
-padding:15px;
-border-radius:10px;
-margin-top:10px;
-text-align:center;
+.copy-btn:hover{
+    transform:translateY(-2px);
+}
+
+.divider{
+    margin:35px 0;
+    height:1px;
+    background:rgba(255,255,255,.08);
+}
+
+.section-title{
+    color:#888;
+    letter-spacing:4px;
+    margin-bottom:20px;
 }
 
 .game{
-padding:15px;
-border-bottom:1px solid #333;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:white;
+    padding:16px 0;
+    border-bottom:1px solid rgba(255,255,255,.06);
+    font-size:20px;
 }
 
-.socials{
-text-align:center;
-margin-top:20px;
+.footer{
+    text-align:center;
+    margin-top:30px;
 }
 
 .socials a{
-color:white;
-text-decoration:none;
-margin:0 10px;
+    color:#bdbdbd;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+}
+
+.socials a:hover{
+    color:white;
+}
+
+.copyright{
+    color:#555;
+    margin-top:20px;
+    font-size:14px;
 }
 </style>
 </head>
 
 <body>
 
+<div class="container">
+
 <div class="card">
 
-<img src="Toji Fushiguro, Manga art, Jujutsu Kaisen Series, Transparent PNG ..." class="logo">
+<div class="header">
+<img class="logo" src="toji.png">
 
-<h1>TOJI SCRIPT</h1>
-<p class="subtitle">PREMIUM SCRIPT HUB</p>
+<div class="title">
+<h1>TOJI SCRIPTS</h1>
+<p></p>
+</div>
+</div>
 
 <div class="script-box">
+<div class="script">
 loadstring(game:HttpGet("https://tojiscript.xyz/loader.lua"))()
+</div>
 </div>
 
 <button class="copy-btn" onclick="copyScript()">
-COPY SCRIPT
+📋 COPY SCRIPT
 </button>
 
-<div class="feature">⚡ Fast Updates</div>
-<div class="feature">🛡️ Secure Loader</div>
-<div class="feature">🚀 Premium Scripts</div>
+<div class="divider"></div>
 
-<h2>Supported Games</h2>
+<h3 class="section-title">SUPPORTED GAMES</h3>
 
-<div class="game">🐶 Adopt Me</div>
-<div class="game">🌱 Grow a Garden</div>
 <div class="game">🧠 Steal a Brainrot</div>
-<div class="game">🔪 Murder Mystery 2</div>
+
+<div class="footer">
 
 <div class="socials">
-<a href="https://youtube.com/@tojirobloxscripts?si=X6ZlAavZpJnrqP3q" target="_blank">📺 YouTube</a>
-<a href="https://discord.gg/redyn" target="_blank">💬 Discord</a>
+<a href="https://discord.gg/redyn" target="_blank>🔵Discord</a>
+<a href="https://youtube.com/@tojirobloxscripts?si=pigKaPxCbBoQ-2Ny" target="_blank>🔴Youtube</a>
+</div>
+
+<div class="copyright">
+© 2026 Toji Script Hub. All rights reserved.
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -125,7 +194,7 @@ function copyScript(){
 navigator.clipboard.writeText(
 'loadstring(game:HttpGet("https://tojiscript.xyz/loader.lua"))()'
 );
-alert("Script copied!");
+alert("Script copied successfully!");
 }
 </script>
 
