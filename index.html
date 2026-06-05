@@ -193,7 +193,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TojiScripts/adm-v2/re
 </div>
 
 <button class="copy-btn" onclick="copyScript1()">
-📋 Adopt Me
+🐱 Adopt Me
 </button>
 
 <!-- SCRIPT 2 -->
@@ -207,6 +207,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TojiScripts/StealaBra
 📋 Steal A Brainrot
 </button>
 
+<!-- SCRIPT 3 -->
+<div class="script-box">
+<div class="script">
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TojiScripts/MurderMystery2/refs/heads/main/MurderMystery2Script"))()
+</div>
+</div>
+
+<button class="copy-btn" onclick="copyScript3()">
+🗡️ Murder Mystery 
+</button>
+
 <div class="divider"></div>
 
 <h3 class="section-title">SUPPORTED GAMES</h3>
@@ -214,6 +225,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TojiScripts/StealaBra
 <div class="game">🧠 Steal a Brainrot</div>
 
 <div class="game">🐱 Adopt Me</div>
+
+<div class="game">🗡️ Murder Mystery 2</div>
+
 
 <div class="footer">
 
@@ -249,6 +263,12 @@ navigator.clipboard.writeText(
 );
 alert("Steal A Brainrot copied successfully!");
 }
+
+function copyScript3(){
+navigator.clipboard.writeText(
+'loadstring(game:HttpGet("https://raw.githubusercontent.com/TojiScripts/StealaBrainrot/refs/heads/main/AnkazxcScript"))()'
+);
+alert("Murder Mystery 2 copied successfully!");
 </script>
 
 </body>
